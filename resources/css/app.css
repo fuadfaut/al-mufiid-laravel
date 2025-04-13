@@ -1,0 +1,55 @@
+/* resources/css/app.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* light background - white */
+    --foreground: 222.2 84% 4.9%; /* light foreground - near black */
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    /* ... definisikan warna lain untuk light mode ... */
+    --primary: 244 76% 58%; /* Contoh: biru */
+    --primary-foreground: 0 0% 100%; /* putih */
+    --secondary: 210 40% 96.1%; /* abu-abu muda */
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 244 76% 58%; /* warna primary */
+    --radius: 0.5rem; /* default radius */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%; /* dark background - near black */
+    --foreground: 210 40% 98%; /* dark foreground - near white */
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+     /* ... definisikan warna lain untuk dark mode ... */
+    --primary: 244 70% 68%; /* Contoh: biru lebih terang */
+    --primary-foreground: 222.2 47.4% 11.2%; /* near black */
+    --secondary: 217.2 32.6% 17.5%; /* abu-abu gelap */
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 244 70% 68%; /* warna primary dark */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border; /* Terapkan border default */
+  }
+  body {
+    @apply bg-background text-foreground; /* Terapkan bg dan text default */
+    /* font-feature-settings: "rlig" 1, "calt" 1; /* Fitur font opsional */
+  }
+}
