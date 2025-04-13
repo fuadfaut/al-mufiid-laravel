@@ -1,4 +1,4 @@
-# E-Raport Al-Mufiid
+# E-Raport Al-Mufiid (vibe Coding)
 
 Sistem manajemen rapor elektronik untuk TPA Al-Mufiid berbasis Laravel.
 
